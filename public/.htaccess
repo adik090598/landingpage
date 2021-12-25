@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c>
+php artisan config:clear<IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
