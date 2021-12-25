@@ -132,11 +132,22 @@
         <div class="products-business">
             <h1> Build your business with us!</h1>
             <p>IT operational risk refers to any threat that could lead to the inappropriate modification, lack of availability, destruction, or theft of IT assets.
-                IT operational risk refers to any threat that could lead to the inappropriate modification, lack of availability, destruction, or theft of IT assets. To oversee IT risk, boards must understand the risks technology poses
+                <br>IT operational risk refers to any threat that could lead to the inappropriate modification, lack of availability, destruction, or theft of IT assets. To oversee IT risk, boards must understand the risks technology poses
                 to the institution, and have questions for management that drive a
                 real understanding of the risk landscape and set clear direction and
                 expectations
             </p>
+        </div>
+    </section>
+    <section>
+        <div class="brands-box">
+            <img src="{{url('assets/images/welcome/brands/brand1.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand2.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand3.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand4.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand5.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand6.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand7.png')}}" alt="brand1">
         </div>
     </section>
 @endsection

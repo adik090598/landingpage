@@ -393,11 +393,8 @@ header .stats{
     text-align: center;
     color: #000000;
     padding-top: 2vw;
-    width: 75vw;
+    width: 70vw;
 }
-
-
-
 /************* end products **************/
 
 .last-header{
@@ -422,7 +419,7 @@ header .stats{
     padding: 3vh 0;
     border-top: 1px solid #C4C4C4;
     border-bottom: 1px solid #C4C4C4;
-    width: 60vw;
+    width: 75vw;
 }
 
 .brands-box img{
