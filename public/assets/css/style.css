@@ -278,4 +278,222 @@ header .stats{
     color: #000000;
 }
 
+.last-header{
+    padding: 5vh;
+    text-align: center;
+}
+.last-header h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.brands-box{
+    margin: 1vh auto 5vh auto;
+    padding: 3vh 0;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    width: 60vw;
+}
+
+.brands-box img{
+    margin: 0 1vw;
+}
+
+footer  {
+    margin-top: 10vh;
+    padding: 2vw;
+    background: #C4C4C4;
+    min-height: 260px;
+}
+
+footer .logo{
+    width: 150px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 0 5vw;
+}
+
+footer ul li h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+footer ul li h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #000000;
+}
+
+footer ul li p{
+    max-width: 10vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+/********************************* navigation **********************************/
+
+nav{
+    padding: 2vh 5vw;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-family: Montserrat;
+}
+
+nav ul li{
+    margin-left: 0.5vw;
+}
+
+nav ul li::after{
+    content: '|';
+    color: #FFFFFF;
+    margin-left: 0.5vw;
+}
+
+nav ul li a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+
+/************************ IT Outsourcing ************************/
+.outsourcing{
+    width: 100%;
+    height: 55vh;
+    margin: 0;
+    padding: 5vw;
+    background: url("/assets/images/outsourcing/outsourcing_header.jpg") no-repeat;
+    background-size: cover;
+}
+.outsourcing h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.outsourcing h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.posts-box{
+    margin: 2vw;
+    padding: 5vw 10vw;
+}
+
+.posts-box .post{
+    margin: 1vw;
+    padding: 1.2vw 1vw;
+    width: 20vw;
+}
+
+.posts-box .selected{
+    background: linear-gradient(23.98deg, #CFCFCF -75.21%, rgba(230, 230, 230, 1) 117.08%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) drop-shadow(0px 4px 4px rgba(249, 115, 58, 0.25));
+    border-radius: 5px;
+}
+
+.posts-box .post h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.posts-box .post p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(249, 115, 58, 0.25);
+}
+
+.posts-box hr{
+    width: 70vw;
+    height: 1px;
+    background: #F9733A;
+}
+
+.working-process{
+
+}
+
+.working-process .header-text{
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+
 

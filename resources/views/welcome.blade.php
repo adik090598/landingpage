@@ -2,7 +2,7 @@
 @section('content')
     <header>
         <div class="header-text">
-            <h1>Let’s create the vision of your product by creating a website</h1>
+            <h1>{{__('welcome.header_text')}}</h1>
             <h5>How can a website change the sales of your product?</h5>
         </div>
         <div class="stats d-flex">
@@ -139,6 +139,21 @@
                 <h5>Swift</h5>
                 <p>An open-source programming language that is easy to learn, Swift supports almost everything from the programming language Objective-C. </p>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="last-header">
+                <h3>We Are Digital Acceleration Experts.<br> <br>
+                    We are a company Powered by Technology and Driven by Talent.</h3>
+        </div>
+        <div class="brands-box">
+            <img src="{{url('assets/images/welcome/brands/brand1.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand2.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand3.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand4.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand5.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand6.png')}}" alt="brand1">
+            <img src="{{url('assets/images/welcome/brands/brand7.png')}}" alt="brand1">
         </div>
     </section>
 @endsection

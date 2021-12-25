@@ -1,9 +1,19 @@
+<nav>
+    <img src="" class="logo" alt="logo">
+    <ul>
+        <li><a href="{{route('products')}}">Products</a></li>
+        <li><a href="{{route('outsource')}}">IT Outsourcing Services</a></li>
+        <li><a href="{{route('about')}}">About us</a></li>
+        <li><a href="{{route('vacancies')}}">Vacancies</a></li>
+        <li><a href="{{route('locale' , ['locale' => 'en'])}}">Eng</a></li>
+        <li><a href="{{route('locale' , ['locale' => 'ru'])}}">Rus</a></li>
+    </ul>
+</nav>
 
 @section('scripts')
     <script type="text/javascript">
             $(".navbar-toggler").on('click', function (e) {
                 $(this).toggleClass("navbar-toggler_active");
             })
-
     </script>
 @endsection
