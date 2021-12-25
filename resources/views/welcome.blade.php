@@ -28,27 +28,27 @@
             <h3 class="header-text">Outsourcing benefits</h3>
             <div class="benefits d-flex justify-content-between align-items-center flex-wrap">
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Saving your budget">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Saving your budget">
                     <h5>Saving your budget</h5>
                 </div>
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Simplicity">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Simplicity">
                     <h5>Simplicity</h5>
                 </div>
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Flexibility">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Flexibility">
                     <h5>Flexibility</h5>
                 </div>
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Competitivness">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Competitivness">
                     <h5>Competitivness</h5>
                 </div>
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Technolgical experience">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Technolgical experience">
                     <h5>Technolgical experience</h5>
                 </div>
                 <div class="benefit-box">
-                    <img src="public/assets/images/welcome/benefit1.png" alt="Confedentiality">
+                    <img src="{{url('assets/images/welcome/benefit1.png')}}" alt="Confedentiality">
                     <h5>Confedentiality</h5>
                 </div>
             </div>
@@ -96,9 +96,48 @@
     </section>
 
     <section>
-        <div class="stacks d-flex align-items-center justify-content-center">
-            <div class="stack d-flex flex-column">
-                <img src="" alt="">
+        <div class="stacks d-flex align-items-center justify-content-center flex-wrap">
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/kotlin.svg')}}" alt="Kotlin">
+                <h5>Kotlin</h5>
+                <p>Kotlin is a modern statically typed programming language used by over 60% of professional
+                    Android developers that helps boost productivity, developer satisfaction, and code safety.</p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/cpp.svg')}}" alt="Kotlin">
+                <h5>C++</h5>
+                <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming languag</p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/java.svg')}}" alt="Kotlin">
+                <h5>Java</h5>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/mysql.svg')}}" alt="Kotlin">
+                <h5>Mysql</h5>
+                <p> Database Service is a fully managed database service to deploy cloud-native applications. HeatWave, an integrated, high-performance query accelerator.</p>
+            </div>
+
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/python.svg')}}" alt="Kotlin">
+                <h5>Python</h5>
+                <p>It is a free, open-source programming language with extensive support modules and community development, easy integration with web services, user-friendly data structures.</p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/php.svg')}}" alt="Kotlin">
+                <h5>PHP</h5>
+                <p>But developers can also use this language to write command-line scripts, and programmers with high-level PHP coding skills can also use it to develop desktop applications. </p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/csharp.svg')}}" alt="Kotlin">
+                <h5>C#</h5>
+                <p>But developers can also use this language to write command-line scripts, and programmers with high-level PHP coding skills can also use it to develop desktop applications. </p>
+            </div>
+            <div class="stack d-flex flex-column align-items-center justify-content-center">
+                <img src="{{url('assets/images/welcome/stacks/swift.svg')}}" alt="Kotlin">
+                <h5>Swift</h5>
+                <p>An open-source programming language that is easy to learn, Swift supports almost everything from the programming language Objective-C. </p>
             </div>
         </div>
     </section>

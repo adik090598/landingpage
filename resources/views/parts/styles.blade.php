@@ -252,7 +252,40 @@
     }
 
     .stacks{
-        padding: 5vh;
+        padding: 5vh 15vw;
+    }
+
+    .stacks .stack{
+        padding: 2vh 3vh;
+        background: rgba(196, 196, 196, 0.2);
+        border-radius: 10px;
+        max-width: 260px;
+        margin: 0.5vw;
+        min-height: 300px;
+    }
+    .stack h5{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        letter-spacing: -0.015em;
+
+        color: #000000;
+    }
+
+    .stack p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: -0.015em;
+
+        color: #000000;
     }
 </style>
 @yield('styles')
