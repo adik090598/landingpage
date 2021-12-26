@@ -415,6 +415,8 @@ header .stats{
 }
 
 .brands-box{
+    display: flex;
+    justify-content: center;
     margin: 1vh auto 5vh auto;
     padding: 3vh 0;
     border-top: 1px solid #C4C4C4;
@@ -446,12 +448,12 @@ footer ul li{
 }
 
 footer ul li h4{
+    margin-bottom: 1.5vw ;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 22px;
-
     color: #000000;
 }
 
@@ -612,6 +614,14 @@ nav ul li a{
     /* identical to box height */
 
     color: #000000;
+}
+
+.working-process .stepper .line {
+    width: 2px;
+    background-color: lightgrey !important;
+}
+.working-process .stepper .line .lead {
+    font-size: 1.1rem;
 }
 
 

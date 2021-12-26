@@ -71,6 +71,31 @@
         <div class="working-process text-center">
             <h3 class="header-text">Our working process</h3>
 
+            <div class="stepper d-flex flex-column mt-5 ml-2">
+                <div class="d-flex mb-1">
+                    <div class="d-flex flex-column pr-4 align-items-center">
+                        <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
+                        <div class="line h-100"></div>
+                    </div>
+                    <div>
+                        <h5 class="text-dark">Create your application respository</h5>
+                        <p class="lead text-muted pb-3">Choose your website name & create repository</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-1">
+                    <div class="d-flex flex-column pr-4 align-items-center">
+                        <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
+                        <div class="line h-100"></div>
+                    </div>
+                </div>
+                <div class="d-flex mb-1">
+                    <div class="d-flex flex-column pr-4 align-items-center">
+                        <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
+                        <div class="line h-100 d-none"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 @endsection
