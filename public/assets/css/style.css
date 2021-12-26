@@ -624,5 +624,250 @@ nav ul li a{
     font-size: 1.1rem;
 }
 
+/************************ About Us ************************/
+.about{
+    padding: 10% 5%;
+    background: url("/assets/images/about/about-background.jpg") no-repeat;
+    background-size: cover;
+}
+.about-text h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about-text p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about-second{
+    padding: 5% 5%;
+    background: rgba(196, 196, 196, 0.15);
+}
+.second-text h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+.second-text p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    padding-top: 2vw;
+    width: 70vw;
+    margin: 0 auto;
+}
+.our-values{
+    padding: 5% 0;
+}
+.our-values h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+.values-boxes {
+    text-align: center;
+    width: 24.8%;
+    height: 343px;
+    padding:47px 19px
+}
+.values-boxes h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+.values-boxes p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+.values-boxes img{
+    margin-bottom: 2vw;
+}
+.values-boxes:nth-child(1) {
+    background: #0886AF;
+}
+.values-boxes:nth-child(2) {
+    background: rgba(63, 217, 191, 0.86);
+}
+.values-boxes:nth-child(3) {
+    background: rgba(249, 115, 58, 0.7);
+}
+.values-boxes:nth-child(4) {
+    background: #013F57
+}
+.why-company{
+    padding: 5% 5%;
+}
+.why-company h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2%;
+}
+.company-boxes h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+.company-boxes{
+    background: #F4F4F4;
+    box-shadow: 0px 4.8484px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12.121px;
+    width: 228px;
+    height: 248px;
+    margin: 2vw 2.5vw;
+}
+.boxes-img {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.boxes-text {
+    padding-top: 27px;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius:  0 0 12.121px  12.121px;
+    height: 50%;
+}
+.about-last {
+    padding: 5% 5%;
+}
+.last-title h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    width: 70vw;
+    margin: 0 auto;
+}
 
+/************************ About Us end ************************/
+
+
+/************************ Vacancies ************************/
+.vacancies{
+    padding: 10% 5%;
+    background: url("/assets/images/vacancies/vacancies-background.jpg") no-repeat;
+    background-size: cover;
+}
+.vacancies-text h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.find-jobs{
+    padding: 5% 5%;
+}
+.find-jobs h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+    color: #F9733A;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.list-jobs {
+    margin-top: 4vw;
+
+}
+.list-jobs ul li {
+    line-height: 3;
+    display: flex;
+    justify-content: space-between;
+    list-style-image: url("/assets/images/vacancies/vector-to.png");
+}
+.list-jobs ul li a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    text-decoration: none;
+}
+.list-button {
+    background: #0886AF;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.find-jobs hr{
+    margin-top: 5vw;
+    height: 1px;
+    background: #F9733A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.vacancies-last {
+    padding: 0% 5%;
+}
+.vacancies-last-title h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+    width: 70vw;
+    margin: 0 auto;
+}
+/************************ Vacancies end ************************/
 
