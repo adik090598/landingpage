@@ -37,6 +37,7 @@ class HomeController extends BaseController
 
     public function about()
     {
+        dd("test");
         return $this->frontPagesView('about');
     }
 
