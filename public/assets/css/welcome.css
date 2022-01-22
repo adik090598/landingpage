@@ -1,0 +1,225 @@
+header{
+    background-image: url("/assets/images/welcome/welcome-header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-inner{
+
+}
+
+.header-title{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 59px;
+
+    color: #FFFBFB;
+}
+
+.header-text{
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+/**
+    Mission
+ */
+
+.mission-inner{
+    min-height: 435px;
+}
+
+.mission-title{
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 29px;
+}
+
+.mission-text{
+    margin: 10% 0 5% 0;
+}
+
+.mission-inner button{
+    padding: 8px 50px;
+    font-weight: bold;
+    font-size: 14px;
+
+    text-align: center;
+    background: #FB9D75;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+/**
+    What we do
+ */
+
+.we-do{
+    padding: 32px 0;
+    min-height: 454px;
+    background-color: #3C8095;
+}
+.we-do-title{
+    font-size: 2.25em;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.we-do-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    min-width: 320px;
+    min-height: 260px;
+    background-color: #FFFFFF;
+}
+
+.we-do-box img{
+    margin: 10px;
+}
+
+.we-do-box h4{
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.we-do-box p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.we-do-box a{
+    padding: 12px 19px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F6AD86;
+}
+
+/**
+   Outsourcing benefits
+ */
+
+.outsourcing-benefits{
+    /*text-align: center;*/
+    padding: 3%;
+}
+.benefits-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 29px;
+
+    color: #212121;
+}
+
+.benefit{
+    display: flex;
+    margin: 2% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/**
+    Worldwide
+ */
+
+.worldwide{
+    padding: 5%;
+    min-height: 465px;
+    background-color: #013F57;
+}
+
+.worldwide-title{
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.worldwide-left img{
+    max-width: 90%;
+}
+
+.worldwide-right{
+    margin: auto;
+}
+
+.worldwide-text{
+    margin: 5% 0;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/**
+    Technologies
+ */
+.technologies{
+    padding: 5%;
+}
+.technologies-title{
+    margin: 0 0 2% 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 29px;
+    text-align: center;
+
+    color: #212121;
+}
+
+.stack{
+    margin: 6px;
+    padding: 12px;
+    min-width: 256px;
+    min-height: 280px;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.stack img{
+    margin: 15px;
+}
+
+.stack h5{
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 22px;
+    color: #212121;
+}
+
+.stack p{
+    width: 90%;
+    font-size: 0.875em;
+    line-height: 17px;
+    text-align: center;
+
+    color: #212121;
+}
+
+
+
+

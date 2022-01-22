@@ -1,1 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: -0.015em;
+}
 
+button{
+    border: none;
+}
+
+nav{
+    position: fixed;
+    display: none;
+}
+
+footer{
+    display: none;
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 476px){
+    *{
+        font-size: 12px;
+    }
+
+    header{
+        min-height: 550px !important;
+    }
+
+    .mission-inner{
+        min-height: 275px !important;
+    }
+
+    .mission-text{
+        margin: 5% 0 5% 0 !important;
+    }
+
+    .benefits-title{
+        margin-top: 20px;
+    }
+
+    .benefit{
+        transform: scale(0.8);
+    }
+
+    /**
+        Technoloogies
+     */
+
+    .stack{
+        flex-direction: row !important;
+    }
+}
+
+
+
