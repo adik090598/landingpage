@@ -1,0 +1,30 @@
+.vacancies{
+    padding: 5%;
+    background-image: url("/assets/images/vacancies/vacancies-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 516px;
+}
+.vacancies-title{
+    font-weight: 700;
+    font-size: 2.25em;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10%;
+}
+
+/*
+    Find job
+ */
+.find-job{
+    padding: 5%;
+}
+.find-job-title{
+    font-weight: 700;
+    font-size: 2.25em;
+    line-height: 44px;
+    color: #FB9D75;
+    text-align: center;
+}
