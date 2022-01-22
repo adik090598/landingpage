@@ -17,10 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/products', ['as' => 'products', 'uses' => 'HomeController@products']);
-Route::get('/outsourcing', ['as' => 'outsource', 'uses' => 'HomeController@outsourcing']);
-Route::get('/about', ['as' => 'about', 'uses' => 'HomeController@about']);
-Route::get('/vacancies', ['as' => 'vacancies', 'uses' => 'HomeController@vacancies']);
+Route::get('/products', function () {
+    return view('products');
+});
+
+Route::get('/outsourcing', function () {
+    return view('outsourcing');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/vacancies', function () {
+    return view('vacancies');
+});
+
 
 
 
