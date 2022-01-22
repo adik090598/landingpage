@@ -1,5 +1,181 @@
 header{
+    display: flex;
+    align-items: center;
     min-height: 550px;
     background-image: url("/assets/images/outsourcing/outsourcing-header-bg.jpg");
+    background-position: top;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.header-title{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 59px;
+
+    color: #FFFBFB;
+}
+
+.header-text{
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.header-bottom{
+    background-color: #3C8095;
+    min-height: 60px;
+}
+
+
+/**
+    Services
+ */
+
+.outsourcing-services{
+    padding: 35px 0;
+}
+
+.outsourcing-services-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.service{
+    margin: 16px;
+    padding: 10px 32px 42px 32px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px #C9CDD3;
+    border-radius: 5px;
+}
+
+.service h5{
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 24px;
+
+    color: #212121;
+}
+
+.service p{
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 17px;
+
+    color: #212121;
+    text-shadow: 0px 4px 4px rgba(249, 115, 58, 0.25);
+}
+
+/*
+    Data Science
+ */
+
+.data-science-title{
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 72px;
+
+    color: #212121;
+}
+
+.data-science-subtitle{
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 17px;
+
+    color: #43869B;
+}
+
+.data-science-text{
+    margin: 3% 0;
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 25px;
+    color: #212121;
+}
+
+.block2{
+    min-height: 430px;
+    background-color: #C2E8E9;
+}
+
+/*
+    Banner
+ */
+.outsourcing-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    background: #013F57;
+}
+
+.outsourcing-banner h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FEFEFE;
+}
+
+/*
+    Our working process
+ */
+.working-process{
+    padding: 5%;
+}
+
+.working-process-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    text-align: center;
+    color: #212121;
+}
+
+.stepper{
+    margin: 10% 0;
+    width: 100%;
+}
+
+.stepper .line {
+    width: 3px;
+    background-color: #4DBDBF !important;
+}
+.stepper .lead {
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.stepper .rounded-circle{
+    background-color: #4DBDBF;
+}
+
+.step{
+    margin: -2% 2%;
+    padding: 20px 32px;
+
+    background: #43869B;
+    border-radius: 5px;
+}
+
+.step-title{
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
