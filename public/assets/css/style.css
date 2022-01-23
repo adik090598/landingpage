@@ -13,7 +13,6 @@ button{
 }
 
 nav {
-    float: right;
     position: fixed;
 }
 nav ul {
