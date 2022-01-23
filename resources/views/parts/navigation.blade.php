@@ -1,5 +1,4 @@
 <nav>
-    <img src="" class="logo" alt="logo">
     <ul>
         <li><a href="/products">Products</a></li>
         <li><a href="/outsourcing">IT Outsourcing Services</a></li>
