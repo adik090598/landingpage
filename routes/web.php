@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/bekertugan', function () {
+    return 'nagiptugan';
+});
+
 Route::get('/products', function () {
     return view('products');
 });
