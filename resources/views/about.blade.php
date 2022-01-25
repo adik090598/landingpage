@@ -86,11 +86,19 @@
     </section>
 
     <section>
+        <div class="about-banner">
+            <div class="container">
+                <h4>The Top 1% of IT Talent is the backbone of our business. We deliver end-to-end Technology Solutions created by the most highly vetted, expert level teams in the business.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <div class="facts">
             <div class="container">
                 <h2 class="facts-title">Facts about our company</h2>
                 <div class="row">
-                    <div class="facts-inner">
+                    <div class="facts-inner d-flex justify-content-around align-items-center">
                         <div class="facts-inner-text">
                             <ul>
                                 <li>We use popular open source solutions - Hadoop</li>
@@ -102,7 +110,7 @@
                             <img src="{{asset('assets/images/about/business.png')}}" alt="">
                         </div>
                     </div>
-                    <div class="facts-inner">
+                    <div class="facts-inner d-flex justify-content-around align-items-center">
                         <div class="facts-inner-img">
                             <img src="{{asset('assets/images/about/social-media.png')}}" alt="">
                         </div>
@@ -114,7 +122,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="facts-inner">
+                    <div class="facts-inner d-flex justify-content-around align-items-center">
                         <div class="facts-inner-text">
                             <ul>
                                 <li>We carry out analysis on the side of sources</li>

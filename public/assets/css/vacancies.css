@@ -6,6 +6,7 @@
     background-position: center;
     min-height: 516px;
 }
+
 .vacancies-title{
     font-weight: 700;
     font-size: 2.25em;
@@ -15,16 +16,62 @@
     margin: 10%;
 }
 
+.vacancies-block{
+    background-color: #F4F4F4;
+    width: 100%;
+    min-height: 60px;
+}
+
 /*
     Find job
  */
 .find-job{
     padding: 5%;
 }
+
 .find-job-title{
     font-weight: 700;
     font-size: 2.25em;
     line-height: 44px;
     color: #FB9D75;
     text-align: center;
+    margin-bottom: 5%;
 }
+
+.job-offers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+    position: relative;
+    padding-left: 3%;
+}
+
+.job-text{
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 22px;
+    color: #000000;
+}
+
+.job-text:before{
+    content:url("/assets/images/vacancies/vector.svg");
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+}
+
+.job-apply button{
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #31849E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #FFFFFF;
+    line-height: 22px;
+    outline: none;
+}
+
+

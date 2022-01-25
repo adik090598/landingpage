@@ -11,6 +11,7 @@
                 Find one that suits your career!
             </h1>
         </div>
+        <div class="vacancies-block"></div>
     </section>
 
     <section>
@@ -19,16 +20,72 @@
                 Find the best jobs
             </h1>
             <div class="container">
-                <div class="row">
-
-                        <div class="col-md-9">
-                            <a href="">Senior Infrastructure Architect - Remote |LATAM</a>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>Senior Infrastructure Architect - Remote |LATAM</h4>
                         </div>
-                        <div class="col-md-3">
-                            <a href="">Apply</a>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
                         </div>
-
-                </div>
+                    </div>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>Job Boards Specialists - Remote</h4>
+                        </div>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>Product Manager - Remote</h4>
+                        </div>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>QA Analyst Senior - Remote</h4>
+                        </div>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>Social Media Manager - Remote</h4>
+                        </div>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="job-offers">
+                        <div class="job-text">
+                            <h4>Business Development Operations Analyst - Remote</h4>
+                        </div>
+                        <div class="job-apply">
+                            <button>
+                                Apply
+                                <img src="{{url('assets/images/vacancies/vector-ok.svg')}}" alt="">
+                            </button>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>

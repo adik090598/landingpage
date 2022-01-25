@@ -83,8 +83,8 @@
                 <div class="stepper d-flex flex-column justify-content-center align-items-center">
                     <div class="d-flex mb-1">
                         <div class="step">
-                            <h5 class="step-title">Create your application respository</h5>
-                            <p class="lead step-text pb-3">Choose your website name & create repository</p>
+                            <h5 class="step-title-1">Create your application respository</h5>
+                            <p class="lead-1 step-text pb-3">Choose your website name & create repository</p>
                         </div>
                         <div class="d-flex flex-column align-items-center">
                             <div class="rounded-circle py-2 px-3 text-white mb-1">1</div>
@@ -104,13 +104,13 @@
                             <div class="rounded-circle py-2 px-3 text-white mb-1">2</div>
                             <div class="line h-100"></div>
                         </div>
-                        <div  class="step">
+                        <div  class="steps">
                             <h5 class="step-title">Clone application respository</h5>
                             <p class="lead step-text pb-3">Choose your website name & create repository</p>
                         </div>
                     </div>
                     <div class="d-flex mb-1">
-                        <div class="step">
+                        <div class="steps">
                             <h5 class="step-title">Create your application respository</h5>
                             <p class="lead step-text pb-3">Choose your website name & create repository</p>
                         </div>
@@ -131,7 +131,7 @@
                         <div class="d-flex flex-column align-items-center">
                             <div class="rounded-circle py-2 px-3 text-white mb-1">4</div>
                         </div>
-                        <div  class="step">
+                        <div  class="steps">
                             <h5 class="step-title">Clone application respository</h5>
                             <p class="lead step-text pb-3">Choose your website name & create repository</p>
                         </div>
