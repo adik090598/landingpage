@@ -125,9 +125,9 @@
             });
 
             function clearCreateForm() {
-                $('#code').empty();
-                $('#ru').empty();
-                $('#en').empty();
+                document.getElementById("code").reset();
+                document.getElementById("ru").reset();
+                document.getElementById("en").reset();
             }
             function loadTexts() {
                 $('.table-body').empty();
