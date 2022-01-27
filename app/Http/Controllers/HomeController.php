@@ -15,6 +15,7 @@ use App\Models\Text;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\View;
 use Jenssegers\Agent\Agent;
 use App\Services\Common\V1\Support\FileService;
 
@@ -24,27 +25,42 @@ class HomeController extends BaseController
     public function index()
     {
         $texts = Text::where('page_id', 1)->get();
-        return $this->frontPagesView('welcome', compact('texts'));
+        $data = HomeController::modelToArray($texts);
+
+        return View::make('welcome', compact('data'));
     }
 
     public function products()
     {
-        return $this->frontPagesView('products');
+        return $this->frontPagesView('products', compact('data'));
     }
 
     public function outsource()
     {
-        $texts = Text::where('page_id', 1)->get();
-        return $this->frontPagesView('outsource');
+        $texts = Text::where('page_id', 2)->get();
+        $data = HomeController::modelToArray($texts);
+        return $this->frontPagesView('outsource', compact('data'));
     }
 
     public function about()
     {
-        return $this->frontPagesView('about');
+        $texts = Text::where('page_id', 3)->get();
+        $data = HomeController::modelToArray($texts);
+        return $this->frontPagesView('about', compact('data'));
     }
 
     public function vacancies()
     {
-        return $this->frontPagesView('vacancies');
+        $texts = Text::where('page_id', 4)->get();
+        $data = HomeController::modelToArray($texts);
+        return $this->frontPagesView('vacancies', compact('data'));
+    }
+
+    public function modelToArray($objects){
+        $data = array();
+        foreach($objects as $object) {
+            $data[$object->code] = $object;
+        }
+        return $data;
     }
 }
