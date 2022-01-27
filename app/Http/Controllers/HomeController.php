@@ -15,6 +15,7 @@ use App\Models\Text;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\View;
 use Jenssegers\Agent\Agent;
 use App\Services\Common\V1\Support\FileService;
@@ -46,6 +47,7 @@ class HomeController extends BaseController
     {
         $texts = Text::where('page_id', 3)->get();
         $data = HomeController::modelToArray($texts);
+
         return $this->frontPagesView('about', compact('data'));
     }
 
@@ -57,9 +59,16 @@ class HomeController extends BaseController
     }
 
     public function modelToArray($objects){
+        $lang = app()->getLocale();
         $data = array();
+
         foreach($objects as $object) {
             $data[$object->code] = $object;
+            if ($lang=='en'){
+                $data[$object->code]->text = $object->en;
+            } else if($lang=='ru'){
+                $data[$object->code]->text = $object->ru;
+            }
         }
         return $data;
     }

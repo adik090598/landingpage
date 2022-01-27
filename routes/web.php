@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('locale');
+
 Route::get('/', ['uses' => 'HomeController@index', 'as' => 'welcome']);
 Route::get('/products', ['uses' => 'HomeController@index', 'as' => 'products']);
 Route::get('/outsourcing', ['uses' => 'HomeController@outsource', 'as' => 'outsourcing']);

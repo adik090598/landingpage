@@ -6,8 +6,8 @@
     <header>
         <div class="container">
             <div class="header-inner">
-                <h1 class="header-title">{{$data['header_title']->ru}}</h1>
-                <h5 class="header-text">{{$data['header_subtitle']->ru}}</h5>
+                <h1 class="header-title">{{$data['header_title']->text}}</h1>
+                <h5 class="header-text">{{$data['header_subtitle']->text}}</h5>
             </div>
         </div>
     </header>
