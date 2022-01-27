@@ -49,4 +49,6 @@ Route::post('/admin/page/{id}', ['uses' => 'AdminController@pageDelete', 'as' =>
 
 Route::get('/admin/page/', ['uses' => 'AdminController@pageTexts', 'as' => 'page.texts']);
 
+Route::get('/admin/text/', ['uses' => 'AdminController@createText', 'as' => 'text.create']);
+
 

@@ -18,10 +18,11 @@ class Text extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
         'code',
         'en',
         'ru',
+        'is_active',
+        'page_id'
     ];
 
     /**

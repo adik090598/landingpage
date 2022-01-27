@@ -28,84 +28,125 @@
                                     @endforeach
                                 </select>
                             @endif
-                            <button type="button" class="btn btn-primary">Добавить</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTextModal">
+                                    Добавить
+                                </button>
                         </div>
                     </div>
                 </div>
             </nav>
             <!-- Navbar -->
         </header>
-        @if($texts)
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Код</th>
-                    <th scope="col">Текст на русском</th>
-                    <th scope="col">Текст на англисском</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($texts as $text)
-                        <tr>
-                            <th scope="row">{{$text->id}}</th>
-                            <td>{{$text->code}}</td>
-                            <td>{{$text->ru}}</td>
-                            <td>{{$text->en}}</td>
-                            <td>{{$text->id}}</td>
-                            <td>{{$text->id}}</td>
-                        </tr>
-                @endforeach
-                </tbody>
-            </table>
-        @endif
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Код</th>
+                <th scope="col">Текст на русском</th>
+                <th scope="col">Текст на англисском</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody class="table-body">
+            </tbody>
+        </table>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="addTextModal" tabindex="-1" role="dialog" aria-labelledby="addTextModaltitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Добавить текст</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div>
+                                <label for="code">Код</label>
+                                <input type="text" id="code" class="form-control" name="code"/>
+                            </div>
+                            <div>
+                                <label for="ru">Русский</label>
+                                <textarea type="text" id="ru" class="form-control" name="ru">
+                                </textarea>
+                            </div>
+                            <div>
+                                <label for="en">Англисский</label>
+                                <textarea type="text" id="en" class="form-control" name="en">
+                                </textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="button" id="createText" class="btn btn-primary">Создать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 
 @section('scripts')
     <script text>
-        $(document).on('change', '#page_id', function (e) {
-            // $('#school_id').empty();
-            $.ajax({
-                url: '{{ route('page.texts') }}',
-                type: "get",
-                data: {page:$('#page_id').val()},
-                success: function (data) {
-                    console.log("success");
-                    for (var i = 0; i < data.length; i++) {
-                        console.log(data[i].id + " " + data[i].ru);
-                    }
-                    refresh();
-                },
-                error: function (msg) {
-                    console.log('Ошибка');
-                }
+        $(document).ready(function(){
+            var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+
+            $(document).on('change', '#page_id', function (e) {
+                loadTexts();
             });
+
+            $(document).on('click', '#createText', function (e) {
+                console.log("create click")
+                $.ajax({
+                    url: '{{ route('text.create') }}',
+                    type: 'GET',
+                    data: {
+                        _token: CSRF_TOKEN,
+                        page: $('#page_id').val(),
+                        code: $('#code').val(),
+                        ru: $('#ru').val(),
+                        en: $('#en').val()},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        $('#addTextModal').modal('toggle');
+                        loadTexts();
+                    },
+                    error: function (msg) {
+                        console.log('Ошибка при создании');
+                    }
+                });
+            });
+
+            function loadTexts() {
+                $('.table-body').empty();
+                $.ajax({
+                    url: '{{ route('page.texts') }}',
+                    type: "get",
+                    data: {page: $('#page_id').val()},
+                    success: function (data) {
+                        console.log("success");
+                        for (var i = 0; i < data.length; i++) {
+                            $('.table-body').append('<tr>' +
+                                '<th scope="row">' + data[i].id + '</th> ' +
+                                '<td>' + data[i].code + '</td> ' +
+                                '<td>' + data[i].ru + '</td> ' +
+                                '<td>' + data[i].en + '</td> ' +
+                                '<td>' + data[i].id + '</td> ' +
+                                '<td>' + data[i].id + '</td> ' +
+                                '</tr>');
+                        }
+                    },
+                    error: function (msg) {
+                        console.log('Ошибка');
+                    }
+                });
+            }
         });
-
-        {{--$(document).on('change', '#region_id', function (e) {--}}
-
-        {{--    // empty the select with previous cities if we have.--}}
-        {{--    $('#school_id').empty();--}}
-
-        {{--    $.ajax({--}}
-        {{--        url: '{{ route('front.schools') }}',--}}
-        {{--        type: "get",--}}
-        {{--        data: {id:$('#region_id').val()},--}}
-        {{--        success: function (data) {--}}
-        {{--            $('#school_id').append("<option>Мектепті таңдаңыз</option>");--}}
-
-        {{--            for (var i = 0; i < data.length; i++) {--}}
-        {{--                $('#school_id').append("<option value='" + data[i].id + "'>" + data[i].name + "</option>");--}}
-        {{--            }--}}
-        {{--            $('#school_id').append("<option id='other_school' value='0'>Басқа мектеп</option>");--}}
-        {{--        },--}}
-        {{--        error: function (msg) {--}}
-        {{--            console.log('Ошибка');--}}
-        {{--        }--}}
-        {{--    });--}}
-        {{--});--}}
     </script>
 @endsection

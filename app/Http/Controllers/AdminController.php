@@ -83,4 +83,17 @@ class AdminController extends BaseController{
         return $texts;
     }
 
+    public function createText(Request $request)
+    {
+        $page = $request->get('page');
+        $text = Text::create([
+            'code' => $request->get('code'),
+            'ru' => $request->get('ru'),
+            'en' => $request->get('en'),
+            'page_id' => $page,
+            'is_active' => true
+        ]);
+        return $text;
+    }
+
 }
