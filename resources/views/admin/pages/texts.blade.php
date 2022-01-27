@@ -116,6 +116,7 @@
                     success: function (data) {
                         $('#addTextModal').modal('toggle');
                         loadTexts();
+                        clearCreateForm();
                     },
                     error: function (msg) {
                         console.log('Ошибка при создании');
@@ -123,6 +124,11 @@
                 });
             });
 
+            function clearCreateForm() {
+                $('#code').empty();
+                $('#ru').empty();
+                $('#en').empty();
+            }
             function loadTexts() {
                 $('.table-body').empty();
                 $.ajax({
