@@ -12,31 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/bekertugan', function () {
-    return 'nagiptugan';
-});
-
-Route::get('/products', function () {
-    return view('products');
-});
-
-Route::get('/outsourcing', function () {
-    return view('outsourcing');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/vacancies', function () {
-    return view('vacancies');
-});
-
+Route::get('/', ['uses' => 'HomeController@index', 'as' => 'welcome']);
+Route::get('/products', ['uses' => 'HomeController@index', 'as' => 'products']);
+Route::get('/outsourcing', ['uses' => 'HomeController@outsource', 'as' => 'outsourcing']);
+Route::get('/about', ['uses' => 'HomeController@about', 'as' => 'about']);
+Route::get('/vacancies', ['uses' => 'HomeController@vacancies', 'as' => 'vacancies']);
 
 Route::get('/admin', ['uses' => 'AdminController@index', 'as' => 'admin.index']);
 

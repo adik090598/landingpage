@@ -34,7 +34,8 @@ class HomeController extends BaseController
 
     public function outsource()
     {
-        return $this->frontPagesView('welcome');
+        $texts = Text::where('page_id', 1)->get();
+        return $this->frontPagesView('outsource');
     }
 
     public function about()
