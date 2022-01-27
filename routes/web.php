@@ -38,5 +38,15 @@ Route::get('/vacancies', function () {
 });
 
 
+Route::get('/admin', ['uses' => 'AdminController@index', 'as' => 'admin.index']);
+
+Route::get('/admin/pages', ['uses' => 'AdminController@pages', 'as' => 'admin.pages']);
+Route::get('/admin/texts', ['uses' => 'AdminController@texts', 'as' => 'admin.texts']);
+
+Route::post('/admin/page', ['uses' => 'AdminController@pageCreate', 'as' => 'page.create']);
+Route::post('/admin/page/{id}', ['uses' => 'AdminController@pageEdit', 'as' => 'page.edit']);
+Route::post('/admin/page/{id}', ['uses' => 'AdminController@pageDelete', 'as' => 'page.delete']);
+
+Route::get('/admin/page/', ['uses' => 'AdminController@pageTexts', 'as' => 'page.texts']);
 
 

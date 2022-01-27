@@ -6,13 +6,12 @@
     <link rel="icon" href="{{asset('images/education_icon.svg')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    @include('parts.styles')
+    @include('admin.parts.styles')
 </head>
 <body>
-@include('parts.navigation')
-@yield('content')
-@include('parts.footer')
+@include('admin.parts.sidebar')
 @include('parts.scripts')
+@yield('content')
 @yield('scripts')
 </body>
 </html>
