@@ -62,11 +62,11 @@ class AdminController extends BaseController{
 
     public function pageDelete(Request $request)
     {
-        $page = Page::find($request->id);
-//
-//        $page->delete();
-//
-//        $pages = Page::where('active', '=', 1)->get();
+//        $page = Page::find($request->id);
+////
+////        $page->delete();
+////
+        $pages = Page::where('active', '=', 1)->get();
 
         return view('admin.pages.pages', compact('pages'));
     }
