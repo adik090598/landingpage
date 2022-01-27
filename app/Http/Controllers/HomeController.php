@@ -33,14 +33,14 @@ class HomeController extends BaseController
 
     public function products()
     {
-        return $this->frontPagesView('products', compact('data'));
+        return View::make('products', compact('data'));
     }
 
     public function outsource()
     {
         $texts = Text::where('page_id', 2)->get();
         $data = HomeController::modelToArray($texts);
-        return $this->frontPagesView('outsource', compact('data'));
+        return View::make('outsource', compact('data'));
     }
 
     public function about()
@@ -48,14 +48,14 @@ class HomeController extends BaseController
         $texts = Text::where('page_id', 3)->get();
         $data = HomeController::modelToArray($texts);
 
-        return $this->frontPagesView('about', compact('data'));
+        return View::make('about', compact('data'));
     }
 
     public function vacancies()
     {
         $texts = Text::where('page_id', 4)->get();
         $data = HomeController::modelToArray($texts);
-        return $this->frontPagesView('vacancies', compact('data'));
+        return View::make('vacancies', compact('data'));
     }
 
     public function modelToArray($objects){
