@@ -40,7 +40,7 @@ class HomeController extends BaseController
     {
         $texts = Text::where('page_id', 2)->get();
         $data = HomeController::modelToArray($texts);
-        return View::make('outsource', compact('data'));
+        return View::make('outsourcing', compact('data'));
     }
 
     public function about()
