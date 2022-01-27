@@ -5,8 +5,22 @@
         <li><a class="nav-a" href="/outsourcing">IT Outsourcing Services</a></li>
         <li><a class="nav-a" href="/about">About us</a></li>
         <li><a class="nav-a" href="/vacancies">Vacancies</a></li>
-        <li><a class="nav-a" href="{{route('locale', ['locale'=>'en'])}}">Eng</a></li>
-        <li><a class="nav-a" href="{{route('locale', ['locale'=>'ru'])}}">Rus</a></li>
+        <li><a class="nav-a" href="{{route('locale', ['locale'=>'en'])}}">
+                @if(app()->getLocale()=='en')
+                    <b>Eng</b>
+                @else
+                    Eng
+                @endif
+            </a>
+        </li>
+        <li><a class="nav-a" href="{{route('locale', ['locale'=>'ru'])}}">
+                @if(app()->getLocale()=='ru')
+                    <b>Ru</b>
+                @else
+                    Ru
+                @endif
+            </a>
+        </li>
     </ul>
 </nav>
 
