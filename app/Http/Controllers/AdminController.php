@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\Page;
 use App\Models\Text;
+use Illuminate\Http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use phpDocumentor\Reflection\Types\Boolean;
 
 class AdminController extends BaseController{
     public function index()
@@ -107,6 +106,13 @@ class AdminController extends BaseController{
         $text->save();
 
         return $text;
+    }
+
+    public function deleteText(Request $request)
+    {
+        $text = Text::destroy($request->id);
+
+        return ['success' => true, 'message' => 'Deleted...'];
     }
 
 }

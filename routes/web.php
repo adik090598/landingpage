@@ -39,6 +39,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin/text/', ['uses' => 'AdminController@createText', 'as' => 'text.create']);
     Route::get('/admin/text/change', ['uses' => 'AdminController@changeText', 'as' => 'text.change']);
+    Route::get('/admin/text/delete', ['uses' => 'AdminController@deleteText', 'as' => 'text.delete']);
 
     Route::get('/dashboard', function () {
         return view('dashboard');
