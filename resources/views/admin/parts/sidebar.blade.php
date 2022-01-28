@@ -20,6 +20,12 @@
                 <i class="zmdi zmdi-widgets"></i> Текста
             </a>
         </li>
+        <li>
+            <form action="{{route('logout')}}" METHOD="POST">
+                @csrf
+                <button type="submit">Выйти</button>
+            </form>
+        </li>
     </ul>
 </div>
 @section('scripts')
