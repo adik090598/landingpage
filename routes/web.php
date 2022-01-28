@@ -38,6 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/page/', ['uses' => 'AdminController@pageTexts', 'as' => 'page.texts']);
 
     Route::get('/admin/text/', ['uses' => 'AdminController@createText', 'as' => 'text.create']);
+    Route::get('/admin/text/change', ['uses' => 'AdminController@changeText', 'as' => 'text.change']);
 
     Route::get('/dashboard', function () {
         return view('dashboard');

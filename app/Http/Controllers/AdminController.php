@@ -96,4 +96,17 @@ class AdminController extends BaseController{
         return $text;
     }
 
+    public function changeText(Request $request)
+    {
+        $text = Text::find($request->id);
+
+        $text->code = $request->get('code');
+        $text->ru = $request->get('ru');
+        $text->en = $request->get('en');
+
+        $text->save();
+
+        return $text;
+    }
+
 }

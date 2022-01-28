@@ -46,7 +46,6 @@
                 <th scope="col">Текст на русском</th>
                 <th scope="col">Текст на англисском</th>
                 <th scope="col"></th>
-                <th scope="col"></th>
             </tr>
             </thead>
             <tbody class="table-body">
@@ -89,6 +88,43 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="editTextModal" tabindex="-1" role="dialog" aria-labelledby="editTextModaltitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Изменить текст</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" id="id_change" class="form-control" name="id" hidden/>
+                            <div>
+                                <label for="code">Код</label>
+                                <input type="text" id="code_change" class="form-control" name="code"/>
+                            </div>
+                            <div>
+                                <label for="ru">Русский</label>
+                                <textarea type="text" id="ru_change" class="form-control" name="ru">
+                                </textarea>
+                            </div>
+                            <div>
+                                <label for="en">Англисский</label>
+                                <textarea type="text" id="en_change" class="form-control" name="en">
+                                </textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="button" id="changeText" class="btn btn-primary">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 
@@ -124,11 +160,42 @@
                 });
             });
 
+            $(document).on('click', '#changeText', function (e) {
+                $.ajax({
+                    url: '{{ route('text.change') }}',
+                    type: 'GET',
+                    data: {
+                        _token: CSRF_TOKEN,
+                        page: $('#page_id').val(),
+                        code: $('#code_change').val(),
+                        id: $('#id_change').val(),
+                        ru: $('#ru_change').val(),
+                        en: $('#en_change').val()},
+                    dataType: 'JSON',
+                    success: function (data) {
+                        $('#editTextModal').modal('toggle');
+                        loadTexts();
+                        clearChangeForm();
+                    },
+                    error: function (msg) {
+                        console.log('Ошибка при изменении');
+                    }
+                });
+            });
+
             function clearCreateForm() {
                 document.getElementById("code").reset();
                 document.getElementById("ru").reset();
                 document.getElementById("en").reset();
             }
+
+            function clearChangeForm() {
+                document.getElementById("id_change").reset();
+                document.getElementById("code_change").reset();
+                document.getElementById("ru_change").reset();
+                document.getElementById("en_change").reset();
+            }
+
             function loadTexts() {
                 $('.table-body').empty();
                 $.ajax({
@@ -143,8 +210,10 @@
                                 '<td>' + data[i].code + '</td> ' +
                                 '<td>' + data[i].ru + '</td> ' +
                                 '<td>' + data[i].en + '</td> ' +
-                                '<td>' + data[i].id + '</td> ' +
-                                '<td>' + data[i].id + '</td> ' +
+                                '<td>' +
+                                '<button type="button" class="btn btn-primary" onclick="changeText('+data[i].id+',\''+data[i].code+'\',\''+ data[i].ru+'\',\''+data[i].en+'\')">' +
+                                'Изменить' +
+                                '</button></td> ' +
                                 '</tr>');
                         }
                     },
@@ -154,5 +223,13 @@
                 });
             }
         });
+
+        function changeText(id, code, ru, en) {
+            $('#code_change').val(code);
+            $('#id_change').val(id);
+            $('#ru_change').val(ru);
+            $('#en_change').val(en);
+            $('#editTextModal').modal('toggle');
+        }
     </script>
 @endsection
