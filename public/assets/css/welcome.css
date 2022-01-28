@@ -8,8 +8,19 @@ header{
     align-items: center;
 }
 
-.header-inner{
+/* parallax */
 
+.scene {
+    position: absolute;
+    width: 100%;
+    transform: translateY(var(--translateY));
+    will-change: transform;
+}
+
+/* end */
+
+.header-inner{
+    margin-top: -10%;
 }
 
 .header-title{

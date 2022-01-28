@@ -10,6 +10,8 @@
                 <h5 class="header-text">{{$data['header_subtitle']->text}}</h5>
             </div>
         </div>
+        <img class="scene d-none d-sm-none d-md-block" data-modifier="-15" src="{{asset('assets/images/welcome/solid-2.png')}}">
+        <img class="scene d-none d-sm-none d-md-block" data-modifier="-25" src="{{asset('assets/images/welcome/solid-1.png')}}">
     </header>
     <section>
         <div class="container">
@@ -183,3 +185,27 @@
         </div>
     </section>
 @endsection
+@section('scripts')
+    <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+    <script>
+        document.querySelectorAll('.scene').forEach((elem) => {
+
+            const modifier = elem.getAttribute('data-modifier')
+
+            basicScroll.create({
+                elem: elem,
+                from: 0,
+                to: 519,
+                direct: true,
+                props: {
+                    '--translateY': {
+                        from: '0',
+                        to: `${ 10 * modifier }px`
+                    }
+                }
+            }).start()
+        })
+    </script>
+@endsection
+
+
