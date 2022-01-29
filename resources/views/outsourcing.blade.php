@@ -6,8 +6,8 @@
     <header>
         <div class="container">
             <div class="header-inner">
-                <h1 class="header-title">Our Services</h1>
-                <h5 class="header-text">Creative and results-driven online marketing solutions for your business</h5>
+                <h1 class="header-title">{{$data['ourservices_title']->text}}</h1>
+                <h5 class="header-text">{{$data['ourservices_subtitle']->text}}</h5>
             </div>
         </div>
     </header>
@@ -16,30 +16,30 @@
 
         <div class="outsourcing-services">
             <div class="container">
-                <h3 class="outsourcing-services-title">IT Outsourcing Services</h3>
+                <h3 class="outsourcing-services-title">{{$data['it_outsourcing_title']->text}}</h3>
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="service">
-                            <h5>Web Development</h5>
-                            <p>By outsourcing data analytics and other functions, companies can save plenty of resources.</p>
+                            <h5>{{$data['it_block1_text']->text}}</h5>
+                            <p>{{$data['it_block1_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="service">
-                            <h5>Mobile Development</h5>
-                            <p>Big data is the set of technologies created to store, analyse and manage this bulk data.</p>
+                            <h5>{{$data['it_block2_text']->text}}</h5>
+                            <p>{{$data['it_block2_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="service">
-                            <h5>Platform Development</h5>
-                            <p>RPA is a software technology that makes it easy to build, deploy, and manage software robots.</p>
+                            <h5>{{$data['it_block3_text']->text}}</h5>
+                            <p>{{$data['it_block3_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="service">
-                            <h5>Software Development</h5>
-                            <p>CRM is the combination of practices, strategies and technologies that companies use to manage. </p>
+                            <h5>{{$data['it_block4_text']->text}}</h5>
+                            <p>{{$data['it_block4_subtext']->text}}</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
     <section>
         <div class="outsourcing-banner">
             <div class="container">
-                <h4>The Top 1% of IT Talent is the backbone of our business. We deliver end-to-end Technology Solutions created by the most highly vetted, expert level teams in the business.</h4>
+                <h4>{{$data['outsourcing_banner']->text}}</h4>
             </div>
         </div>
     </section>
@@ -78,13 +78,13 @@
     <section>
         <div class="working-process">
             <div class="container">
-                <h2 class="working-process-title">Our working process</h2>
+                <h2 class="working-process-title">{{$data['working_process_title']->text}}</h2>
 
                 <div class="stepper d-flex flex-column justify-content-center align-items-center">
                     <div class="d-flex mb-1">
                         <div class="step">
-                            <h5 class="step-title-1">Create your application respository</h5>
-                            <p class="lead-1 step-text pb-3">Choose your website name & create repository</p>
+                            <h5 class="step-title-1">{{$data['process_text1']->text}}</h5>
+                            <p class="lead-1 step-text pb-3">{{$data['process_subtext1']->text}}</p>
                         </div>
                         <div class="d-flex flex-column align-items-center">
                             <div class="rounded-circle py-2 px-3 text-white mb-1">1</div>
@@ -105,14 +105,14 @@
                             <div class="line h-100"></div>
                         </div>
                         <div  class="steps">
-                            <h5 class="step-title">Clone application respository</h5>
-                            <p class="lead step-text pb-3">Choose your website name & create repository</p>
+                            <h5 class="step-title">{{$data['process_text2']->text}}</h5>
+                            <p class="lead step-text pb-3">{{$data['process_subtext2']->text}}</p>
                         </div>
                     </div>
                     <div class="d-flex mb-1">
                         <div class="steps">
-                            <h5 class="step-title">Create your application respository</h5>
-                            <p class="lead step-text pb-3">Choose your website name & create repository</p>
+                            <h5 class="step-title">{{$data['process_text3']->text}}</h5>
+                            <p class="lead step-text pb-3">{{$data['process_subtext3']->text}}</p>
                         </div>
                         <div class="d-flex flex-column align-items-center">
                             <div class="rounded-circle py-2 px-3 text-white mb-1">3</div>
@@ -132,8 +132,8 @@
                             <div class="rounded-circle py-2 px-3 text-white mb-1">4</div>
                         </div>
                         <div  class="steps">
-                            <h5 class="step-title">Clone application respository</h5>
-                            <p class="lead step-text pb-3">Choose your website name & create repository</p>
+                            <h5 class="step-title">{{$data['process_text4']->text}}</h5>
+                            <p class="lead step-text pb-3">{{$data['process_subtext4']->text}}</p>
                         </div>
                     </div>
                 </div>

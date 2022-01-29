@@ -7,9 +7,8 @@
         <div class="our-firm">
             <div class="container">
                 <div class="our-firm-inner">
-                    <h1 class="our-firm-title">OUR FIRM</h1>
-                    <h5 class="our-firm-text">Our values fuel your results. <br>
-                        From strategy to execution, we create lasting impact through a focus on trust and results.</h5>
+                    <h1 class="our-firm-title">{{$data['our_firm_title']->text}}</h1>
+                    <h5 class="our-firm-text">{{$data['our_firm_subtitle']->text}}</h5>
                 </div>
             </div>
         </div>
@@ -20,22 +19,11 @@
         <div class="outsourcing-technology">
             <div class="container">
                 <div class="outsourcing-technology-inner">
-                    <h1 class="technology-title">The leading Outsourcing Technology Solutions company</h1>
-                    <p class="technology-text">I founded Riviera Outsourcing to bring solutions to business leaders, and
-                        technical and IT departments. We offer them, through our network of solid partners (companies
-                        with 100 to 2000 employees), remote developers and engineers with attractive daily rates. </p>
-                    <p class="technology-text">In terms of positioning, we believe that there is no incompatibility
-                        between a CSR approach
-                        favouring local providers, and occasional use of the expertise of international companies on
-                        complex technologies and time-consuming tasks.</p>
-                    <p class="technology-text">Finally, we have the ambition through our international network and our
-                        partners to be the first
-                        nearshore outsourcing agency in Europe. We aim to support startups, small and medium companies,
-                        as well as large major groups.</p>
-                    <p class="technology-text">We would love to put our expertise and experience to the benefit of your
-                        organization for the
-                        management of your research and development, engineering and it projects through our
-                        international network of experts.”</p>
+                    <h1 class="technology-title">{{$data['outsourcing_technology_title']->text}}</h1>
+                    <p class="technology-text">{{$data['outsourc_tech_text1']->text}}</p>
+                    <p class="technology-text">{{$data['outsourc_tech_text2']->text}}</p>
+                    <p class="technology-text">{{$data['outsourc_tech_text3']->text}}</p>
+                    <p class="technology-text">{{$data['outsourc_tech_text4']->text}}</p>
                 </div>
             </div>
         </div>
@@ -43,41 +31,36 @@
 
     <section>
         <div class="values">
-            <h3 class="values-title">Our Values</h3>
+            <h3 class="values-title">{{$data['values_title']->text}}</h3>
             <div class="line-block"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <div class="values-block d-flex flex-column justify-center align-items-center ">
-                            <img src="{{asset('assets/images//about/values-1.svg')}}" alt="">
-                            <h5>Efficiency</h5>
-                            <p>We constantly assess our systems and processes to learn how to get things done in the
-                                smartest way for our clients and our business.</p>
+                            <img src="{{asset('assets/images/about/values-1.svg')}}" alt="">
+                            <h5>{{$data['values_box1_text']->text}}</h5>
+                            <p>{{$data['values_box1_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="values-block d-flex flex-column justify-center align-items-center ">
                             <img src="{{asset('assets/images/about/values-2.svg')}}" alt="">
-                            <h5>Teamwork & Collaboration</h5>
-                            <p>We leverage our collective genius by empowering the talented individuals on our teams to
-                                make decisions.</p>
+                            <h5>{{$data['values_box2_text']->text}}</h5>
+                            <p>{{$data['values_box2_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="values-block d-flex flex-column justify-center align-items-center ">
                             <img src="{{asset('assets/images/about/values-3.svg')}}" alt="">
-                            <h5>Client Oriented Creation</h5>
-                            <p>We focus on our clients’ business drivers to deliver maximum value and exceed their
-                                expectations.
-                            </p>
+                            <h5>{{$data['values_box3_text']->text}}</h5>
+                            <p>{{$data['values_box3_subtext']->text}}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="values-block d-flex flex-column justify-center align-items-center ">
                             <img src="{{asset('assets/images/about/values-4.svg')}}" alt="">
-                            <h5>Transparency</h5>
-                            <p>By staying clear about our goals and motivations, we build trust with our clients and
-                                teams—the foundation of great teamwork.</p>
+                            <h5>{{$data['values_box4_text']->text}}</h5>
+                            <p>{{$data['values_box4_subtext']->text}}</p>
                         </div>
                     </div>
                 </div>
@@ -88,7 +71,7 @@
     <section>
         <div class="about-banner">
             <div class="container">
-                <h4>The Top 1% of IT Talent is the backbone of our business. We deliver end-to-end Technology Solutions created by the most highly vetted, expert level teams in the business.</h4>
+                <h4>{{$data['block_banner']->text}}</h4>
             </div>
         </div>
     </section>
@@ -96,14 +79,14 @@
     <section>
         <div class="facts">
             <div class="container">
-                <h2 class="facts-title">Facts about our company</h2>
+                <h2 class="facts-title">{{$data['facts_title']->text}}</h2>
                 <div class="row">
                     <div class="facts-inner d-flex justify-content-around align-items-center">
                         <div class="facts-inner-text">
                             <ul>
-                                <li>We use popular open source solutions - Hadoop</li>
-                                <li>We determine the needs of all business units of the Customer</li>
-                                <li>We compose business requirements for tasks</li>
+                                <li>{{$data['factsblock1_text1']->text}}</li>
+                                <li>{{$data['factsblock1_text2']->text}}</li>
+                                <li>{{$data['factsblock1_text3']->text}}</li>
                             </ul>
                         </div>
                         <div class="facts-inner-img">
@@ -116,18 +99,18 @@
                         </div>
                         <div class="facts-inner-text">
                             <ul>
-                                <li>We build processes of data quality control and description of Business Rules</li>
-                                <li>We implement showcases and subject areas for reporting and analytics</li>
-                                <li>We carry out industrial testing and installation of Data Quality routine checks</li>
+                                <li>{{$data['factsblock2_text1']->text}}</li>
+                                <li>{{$data['factsblock2_text2']->text}}</li>
+                                <li>{{$data['factsblock2_text3']->text}}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="facts-inner d-flex justify-content-around align-items-center">
                         <div class="facts-inner-text">
                             <ul>
-                                <li>We carry out analysis on the side of sources</li>
-                                <li>We design storage of structured and unstructured data</li>
-                                <li>We implement ETL processes</li>
+                                <li>{{$data['factsblock3_text1']->text}}</li>
+                                <li>{{$data['factsblock3_text2']->text}}</li>
+                                <li>{{$data['factsblock3_text3']->text}}</li>
                             </ul>
                         </div>
                         <div class="facts-inner-img">
