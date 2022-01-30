@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{url('assets/css/outsourcing.css')}}">
 @endsection
 @section('content')
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-inner">
                 <h1 class="header-title">{{$data['ourservices_title']->text}}</h1>

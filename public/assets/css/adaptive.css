@@ -1,4 +1,4 @@
-@media screen and (max-width: 476px){
+@media screen and (max-width: 479px){
     *{
         font-size: 12px;
     }
@@ -23,12 +23,363 @@
         transform: scale(0.8);
     }
 
+    .worldwide {
+        min-height: 340px !important;
+    }
+
     /**
-        Technoloogies
+        It outsourcing
      */
 
-    .stack{
-        flex-direction: row !important;
+    .header {
+        min-height: 500px !important;
+        padding: 40% 5% !important;
+    }
+
+    .outsourcing-services-title {
+        text-align: center;
+    }
+
+    .service {
+        margin: 16px;
+        padding: 10px 32px 25px 32px !important;
+    }
+
+    .outsourcing-banner h4 {
+        font-size: 15px !important;
+    }
+
+    /**
+        About us
+     */
+
+    .our-firm {
+        min-height: 400px !important;
+    }
+
+    .our-firm-inner {
+        margin-top: 15%;
+    }
+
+    .values-block {
+        height: 350px;
+        width: 297px;
+        padding: 10% 5% !important;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    .facts-inner-img img{
+        max-width: 100%;
+    }
+
+    .facts-inner-text {
+        line-height: 18px !important;
+        list-style: none;
+        padding-left: 18px;
+    }
+
+    .facts-inner-text ul li {
+        list-style: none;
+    }
+
+
+    /**
+        Vacancies
+     */
+
+    .vacancies {
+        min-height: 400px !important;
+    }
+
+    .vacancies-title {
+        margin: 25% auto !important;
+    }
+
+    .job-text:before {
+        display: none;
+    }
+
+    /**
+        Footer
+     */
+
+    .footer-ul {
+        justify-content: center !important;
+    }
+
+    .social-networks{
+        display: none !important;
+    }
+
+    .social-networks-mobile {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-networks-mobile img {
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .we-do-box {
+        margin: 24px auto !important;
+    }
+
+    .worldwide {
+        min-height: 340px !important;
+    }
+
+    .footer-ul {
+        justify-content: center !important;
+    }
+
+    .social-networks{
+        display: none !important;
+    }
+
+    .social-networks-mobile {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-networks-mobile img {
+        margin: 5px;
+    }
+
+    /**
+        It outsourcing
+     */
+
+    .header {
+        min-height: 500px !important;
+        padding: 40% 5% !important;
+    }
+
+    .outsourcing-services-title {
+        text-align: center;
+    }
+
+    .service {
+        margin: 16px;
+        padding: 10px 32px 25px 32px !important;
+    }
+
+    .outsourcing-banner h4 {
+        font-size: 15px !important;
+    }
+
+    /**
+        About us
+     */
+
+    .our-firm {
+        min-height: 400px !important;
+    }
+
+    .our-firm-inner {
+        margin-top: 15%;
+    }
+
+    .values-block {
+        height: 350px;
+        width: 297px;
+        padding: 10% 5% !important;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    .facts-inner-img img{
+        max-width: 100%;
+    }
+
+    .facts-inner-text {
+        line-height: 18px !important;
+        list-style: none;
+        padding-left: 18px;
+    }
+
+    .facts-inner-text ul li {
+        list-style: none;
+    }
+
+    /**
+        Vacancies
+     */
+
+    .vacancies {
+        min-height: 400px !important;
+    }
+
+    .vacancies-title {
+        margin: 25% auto !important;
+    }
+
+    .job-text:before {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .we-do-box {
+        margin: 24px auto !important;
+    }
+
+    .worldwide {
+        min-height: 340px !important;
+    }
+
+    /**
+        It outsourcing
+     */
+
+    .header {
+        padding: 40% 5% !important;
+    }
+
+    .outsourcing-services-title {
+        text-align: center;
+    }
+
+    .service {
+        margin: 16px;
+        padding: 10px 32px 25px 32px !important;
+    }
+
+    .outsourcing-banner h4 {
+        font-size: 15px !important;
+    }
+
+    /**
+        About us
+     */
+
+    .our-firm {
+        min-height: 400px !important;
+    }
+
+    .our-firm-inner {
+        margin-top: 15%;
+    }
+
+    .values-block {
+        height: 350px;
+        width: 297px;
+        padding: 10% 5% !important;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    .facts-inner-img img{
+        max-width: 100%;
+    }
+
+    .facts-inner-text {
+        line-height: 18px !important;
+        list-style: none;
+        padding-left: 18px;
+    }
+
+    .facts-inner-text ul li {
+        list-style: none;
+    }
+
+    /**
+        Vacancies
+     */
+
+    .vacancies {
+        min-height: 400px !important;
+    }
+
+    .vacancies-title {
+        margin: 25% auto !important;
+    }
+
+    .job-text:before {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    .mission-inner-right img{
+        width: 100%;
+    }
+
+    .we-do-box {
+        margin: 24px auto !important;
+    }
+
+    .stack {
+        min-width: 150px !important;
+        min-height: 390px !important;
+    }
+
+    /**
+        It outsourcing
+     */
+    .header-inner{
+        margin-top: 15%;
+    }
+
+    /**
+        About us
+     */
+
+    .our-firm-inner {
+        margin-top: 15%;
+    }
+
+    .values-block {
+        min-width: 165px !important;
+        min-height: 405px !important;
+    }
+
+    .facts-inner-img img{
+        max-width: 100%;
+    }
+
+    .facts-inner-text {
+        line-height: 18px !important;
+        list-style: none;
+        padding-left: 18px;
+    }
+
+    .facts-inner-text ul li {
+        list-style: none;
+    }
+
+    /**
+        Vacancies
+     */
+
+    .vacancies-title {
+        margin: 25% auto !important;
+    }
+
+}
+
+@media screen and (max-width: 1082px){
+    .mission-inner-right img{
+        width: 100%;
+    }
+
+    .we-do-box {
+        margin: 24px auto !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .we-do-box {
+        margin: 24px auto !important;
     }
 }
 

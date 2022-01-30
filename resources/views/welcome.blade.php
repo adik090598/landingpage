@@ -21,7 +21,7 @@
                     <p class="mission-text">{{$data['mission_text']->text}}</p>
                     <button>{{$data['button']->text}}</button>
                 </div>
-                <div class="mission-inner-right d-none d-sm-block col-6 col-md-5">
+                <div class="mission-inner-right d-none d-md-block col-6 col-md-5">
                     <img src="{{asset('assets/images/welcome/mission-image.jpg')}}" alt="">
                 </div>
             </div>

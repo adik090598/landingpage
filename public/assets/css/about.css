@@ -141,6 +141,10 @@
     margin: 2%;
 }
 
+.facts-inner-img img    {
+    min-width: 100%;
+}
+
 /*
     Banner
 */

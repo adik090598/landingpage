@@ -62,3 +62,7 @@ button{
     position: relative;
     margin-left: 250px;
 }
+
+textarea.form-control {
+    resize:none;
+}

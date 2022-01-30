@@ -107,3 +107,17 @@ footer ul li{
     line-height: 17px;
     color: #000000;
 }
+
+.social-networks img {
+    width: 35px;
+    height: 35px;
+}
+
+.social-networks-mobile img{
+    width: 35px;
+    height: 35px;
+}
+
+.social-networks-mobile{
+    visibility: hidden;
+}
