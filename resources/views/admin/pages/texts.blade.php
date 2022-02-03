@@ -231,7 +231,7 @@
                             '<td>' + data[i].ru + '</td> ' +
                             '<td>' + data[i].en + '</td> ' +
                             '<td>' +
-                            '<button type="button" class="btn btn-primary" onclick="changeText(' + data[i].id + ',\'' + data[i].code + '\',\'' + data[i].ru + '\',\'' + data[i].en + '\')">' +
+                            '<button type="button" class="btn btn-primary" onclick="changeText(' + data[i].id + ')">' +
                             'Изменить' +
                             '</button></td> ' +
                             '<td>' +
@@ -247,11 +247,28 @@
             });
         }
 
-        function changeText(id, code, ru, en) {
-            $('#code_change').val(code);
-            $('#id_change').val(id);
-            $('#ru_change').val(ru);
-            $('#en_change').val(en);
+        function changeText(id) {
+            $.ajax({
+                url: '{{ route('text.get') }}',
+                type: 'GET',
+                data: {
+                    id: id
+                },
+                dataType: 'JSON',
+                // beforeSend:function(){
+                //     return confirm("Вы точно хотите удалить текст?");
+                // },
+                success: function (data) {
+                    $('#code_change').val(data["code"]);
+                    $('#id_change').val(data["id"]);
+                    $('#ru_change').val(data["ru"]);
+                    $('#en_change').val(data["en"]);
+                },
+                error: function (msg) {
+                    console.log('Ошибка при получении');
+                }
+            });
+
             $('#editTextModal').modal('toggle');
         };
 

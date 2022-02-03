@@ -108,6 +108,13 @@ class AdminController extends BaseController{
         return $text;
     }
 
+    public function getText(Request $request)
+    {
+        $text = Text::find($request->id);
+
+        return $text;
+    }
+
     public function deleteText(Request $request)
     {
         $text = Text::destroy($request->id);

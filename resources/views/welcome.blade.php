@@ -17,9 +17,9 @@
         <div class="container">
             <div class="mission-inner d-flex justify-content-between align-items-center">
                 <div class="mission-inner-left col-12 col-md-5">
-                    <h4 class="mission-title">{{$data['mission_title']->text}}</h4>
-                    <p class="mission-text">{{$data['mission_text']->text}}</p>
-                    <button>{{$data['button']->text}}</button>
+                    <h4 class="mission-title">{{ isset($data['mission_title']) ? $data['mission_title']->text : 'mission_title'}}</h4>
+                    <p class="mission-text">{{ isset($data['mission_text']) ? $data['mission_text']->text : 'mission_text'}}</p>
+                    <button>{{isset($data['button']) ? $data['button']->text : 'button'}}</button>
                 </div>
                 <div class="mission-inner-right d-none d-md-block col-6 col-md-5">
                     <img src="{{asset('assets/images/welcome/mission-image.jpg')}}" alt="">
