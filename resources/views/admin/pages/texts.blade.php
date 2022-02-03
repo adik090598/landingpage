@@ -105,7 +105,7 @@
                             <input type="text" id="id_change" class="form-control" name="id" hidden/>
                             <div>
                                 <label for="code">Код</label>
-                                <input type="text" id="code_change" class="form-control" name="code"/>
+                                <input type="text" id="code_change" class="form-control" name="code" disabled/>
                             </div>
                             <div>
                                 <label for="ru">Русский</label>

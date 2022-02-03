@@ -305,6 +305,18 @@
         display: none;
     }
 
+    /*
+        burger-menu
+    */
+    .menu-wrap{
+        display: block;
+    }
+
+    .menu ul li a p{
+        color: #2194c0;
+        /*font-weight: bold;*/
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 992px){
