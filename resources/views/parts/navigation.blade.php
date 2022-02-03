@@ -1,6 +1,6 @@
 <nav>
     <ul class="d-none d-md-block">
-        <li><a class="nav-a active" href="/">{{app()->getLocale() == 'en' ? 'Home' : 'Главная'}}</a></li>
+        <li><a class="nav-a" href="/">{{app()->getLocale() == 'en' ? 'Home' : 'Главная'}}</a></li>
         <li hidden><a class="nav-a" href="/products">{{app()->getLocale() == 'en' ? 'Products' : 'Продукты'}}</a></li>
         <li><a class="nav-a" href="/outsourcing">{{app()->getLocale() == 'en' ? 'IT Outsourcing Services' : 'Услуги ИТ-аутсорсинга'}}</a></li>
         <li><a class="nav-a" href="/about">{{app()->getLocale() == 'en' ? 'About us' : 'О нас'}}</a></li>
@@ -24,29 +24,36 @@
     </ul>
 </nav>
 
-@section('scripts')
-    <script>
-        var topper = $('nav').offset().top;
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="/">{{app()->getLocale() == 'en' ? 'Home' : 'Главная'}}</a></li>
+                    <li><a href="/outsourcing">{{app()->getLocale() == 'en' ? 'IT Outsourcing Services' : 'Услуги ИТ-аутсорсинга'}}</a></li>
+                    <li><a href="/about">{{app()->getLocale() == 'en' ? 'About us' : 'О нас'}}</a></li>
+                    <li><a href="/vacancies">{{app()->getLocale() == 'en' ? 'Vacancies' : 'Вакансии'}}</a></li>
+                    <li><a href="{{route('locale', ['locale'=>'en'])}}">
+                            @if(app()->getLocale()=='en')
+                                <p>Eng</p>
+                            @else
+                                Eng
+                            @endif
+                        </a>
+                    </li>
+                    <li><a href="{{route('locale', ['locale'=>'ru'])}}">
+                            @if(app()->getLocale()=='ru')
+                                <p>Ru</p>
+                            @else
+                                Ru
+                            @endif
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-        window.onscroll = function() { scroller() };
-
-        // sticky function
-        function scroller() {
-            if($(window).scrollTop() > topper) {
-                console.log("if");
-                $('.nav-a').addClass('fixed');
-            }
-            else if($(window).scrollTop() == topper)  {
-                console.log("else");
-                $('.nav-a').removeClass('fixed');
-            }
-        }
-
-
-        $(function () {
-            $('nav li a').filter(function () {
-                return this.href === location.href;
-            }).addClass('active');
-        });
-    </script>
-@endsection
