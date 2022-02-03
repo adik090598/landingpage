@@ -110,7 +110,7 @@ class AdminController extends BaseController{
 
     public function deleteText(Request $request)
     {
-        $text = Text::destroy($request->id);
+//        $text = Text::destroy($request->id);
 
         return ['success' => true, 'message' => 'Deleted...'];
     }
