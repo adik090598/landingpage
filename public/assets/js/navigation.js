@@ -25,10 +25,3 @@ $(function () {
 
     }).addClass('active');
 });
-
-
-// $(".burger-menu").on("click", function() {
-//     /* your code here */
-//     console.log("asd");
-//     $('nav>li').slideToggle();
-// });

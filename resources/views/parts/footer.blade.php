@@ -5,7 +5,8 @@
                 <div class="d-flex flex-column align-items-center justify-content-center ">
                     <img class="logo" src="{{url('assets/images/welcome/logo.png')}}" alt="logo">
                     <h5 class="logo-footer-title">Company</h5>
-                    <p class="logo-copyrights">Copyright - A company © {{date('Y')}}</p>
+                    <p class="logo-copyrights">Dk-partners provides outsourcing services for Hardware and Software projects (R&D, Engineering, IT Development)
+                        with technical partners located internationally {{date('Y')}}</p>
                 </div>
             </div>
             <div class="col-12 col-md-9">
@@ -13,19 +14,17 @@
                     <li class="col-4 col-md-3">
                         <div class="d-flex flex-column">
                             <h4 class="footer-title">Address</h4>
-                            <p class="footer-text">123 Pushkina Avenue <br>
-                                Highwood street <br>
-                                596654 Moskow, Russia <br>
+                            <p class="footer-text">Dostyk 210 <br>
+                                Almaty, Kazakhstan <br>
                                 Monday - Friday <br>
-                                9:00-19:00</p>
+                                9:00-18:00</p>
                         </div>
                     </li>
                     <li class="col-4 col-md-3">
                         <div class="d-flex flex-column">
                             <h4 class="footer-title">Contacts</h4>
-                            <p class="footer-text">Phone : +7 707 995 74 56 <br>
-                                Mobile : +7 747 474 13 04 <br>
-                                Email : acompany@gmail.com</p>
+                            <p class="footer-text">Mobile: +7 777 069 34 00 <br>
+                                Email : info@dk-partners.net</p>
                         </div>
                     </li>
                     <li class="col-4 col-md-3">
@@ -36,7 +35,7 @@
                                 <img src="{{url('assets/images/footer/linkedin.svg')}}" alt="linkedin">
                                 <img src="{{url('assets/images/footer/mail.svg')}}" alt="mail">
                                 <img src="{{url('assets/images/footer/telegram.svg')}}" alt="telegram">
-                                <img src="{{url('assets/images/footer/whatsapp.svg')}}" alt="whatsapp">
+{{--                                <img src="{{url('assets/images/footer/whatsapp.svg')}}" alt="whatsapp">--}}
                             </div>
                         </div>
                     </li>
@@ -45,7 +44,7 @@
                     <img src="{{url('assets/images/footer/linkedin.svg')}}" alt="linkedin">
                     <img src="{{url('assets/images/footer/mail.svg')}}" alt="mail">
                     <img src="{{url('assets/images/footer/telegram.svg')}}" alt="telegram">
-                    <img src="{{url('assets/images/footer/whatsapp.svg')}}" alt="whatsapp">
+{{--                    <img src="{{url('assets/images/footer/whatsapp.svg')}}" alt="whatsapp">--}}
                 </div>
             </div>
         </div>
