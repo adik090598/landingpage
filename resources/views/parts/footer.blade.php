@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-3">
                 <div class="d-flex flex-column align-items-center justify-content-center ">
-                    <img class="logo" src="{{url('assets/images/welcome/logo.png')}}" alt="logo">
+                    <img class="logo" src="{{url('assets/images/welcome/dk-partners-logo.png')}}" alt="logo">
                     <h5 class="logo-footer-title">Company</h5>
                     <p class="logo-copyrights">Dk-partners provides outsourcing services for Hardware and Software projects (R&D, Engineering, IT Development)
                         with technical partners located internationally {{date('Y')}}</p>
