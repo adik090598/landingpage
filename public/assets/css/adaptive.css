@@ -27,6 +27,19 @@
         min-height: 340px !important;
     }
 
+    .worldwide-text{
+        font-size: 12px !important;
+    }
+
+    .stack{
+        min-height: 280px !important;
+    }
+
+    .logo-copyrights{
+        font-size: 12px !important;
+        margin: 5% 0;
+    }
+
     /**
         It outsourcing
      */
@@ -331,7 +344,6 @@
 
     .stack {
         min-width: 150px !important;
-        min-height: 390px !important;
     }
 
     /**
@@ -351,7 +363,6 @@
 
     .values-block {
         min-width: 165px !important;
-        min-height: 405px !important;
     }
 
     .facts-inner-img img{
@@ -366,6 +377,10 @@
 
     .facts-inner-text ul li {
         list-style: none;
+    }
+
+    .values-block p{
+        font-size: 12px !important;
     }
 
     /**
