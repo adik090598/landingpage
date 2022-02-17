@@ -81,7 +81,6 @@ header{
     font-size: 2.25em;
     line-height: 44px;
     letter-spacing: -0.015em;
-
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
@@ -94,7 +93,7 @@ header{
     align-items: center;
     margin: 24px;
     min-width: 320px;
-    min-height: 260px;
+    min-height: 290px;
     background-color: #FFFFFF;
 }
 
@@ -106,7 +105,7 @@ header{
     font-weight: 700;
     font-size: 1.5em;
     line-height: 29px;
-
+    text-align: center;
     color: #000000;
 }
 
