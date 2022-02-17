@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Page;
 use App\Models\Text;
+use App\Models\Vacancy;
 use Illuminate\Http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
@@ -121,5 +122,34 @@ class AdminController extends BaseController{
 
         return ['success' => true, 'message' => 'Deleted...'];
     }
+
+    public function vacancies()
+    {
+        $vacancies = Vacancy::where('active', '=', 1)->get();
+
+        return view('admin.pages.vacancies', compact('vacancies'));
+    }
+
+    public function vacancyCreate(Request $request)
+    {
+        $vacancy = Vacancy::create([
+            'name' => $request->get('name'),
+            'description' => $request->get('description'),
+            'active' => true
+        ]);
+
+        $vacancy->save();
+
+        return redirect()->back();
+    }
+
+    public function vacancyDelete(Request $request)
+    {
+        $vacancy = Vacancy::destroy($request->id);
+
+        return redirect()->back();
+    }
+
+
 
 }

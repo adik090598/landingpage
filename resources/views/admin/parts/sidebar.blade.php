@@ -14,6 +14,11 @@
                 <i class="zmdi zmdi-link"></i> Страницы
             </a>
         </li>
+        <li>
+            <a href="{{route('admin.vacancies')}}">
+                <i class="zmdi zmdi-widgets"></i> Ваканции
+            </a>
+        </li>
         <hr>
         <li>
             <a href="{{route('admin.texts')}}">

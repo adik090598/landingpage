@@ -24,19 +24,24 @@ Route::get('/products', ['uses' => 'HomeController@index', 'as' => 'products']);
 Route::get('/outsourcing', ['uses' => 'HomeController@outsource', 'as' => 'outsourcing']);
 Route::get('/about', ['uses' => 'HomeController@about', 'as' => 'about']);
 Route::get('/vacancies', ['uses' => 'HomeController@vacancies', 'as' => 'vacancies']);
+Route::post('/vacancies/send-sv', ['uses' => 'HomeController@sendCV', 'as' => 'send.cv']);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin', ['uses' => 'AdminController@index', 'as' => 'admin.index']);
 
     Route::get('/admin/pages', ['uses' => 'AdminController@pages', 'as' => 'admin.pages']);
     Route::get('/admin/texts', ['uses' => 'AdminController@texts', 'as' => 'admin.texts']);
+    Route::get('/admin/vacancies', ['uses' => 'AdminController@vacancies', 'as' => 'admin.vacancies']);
 
     Route::post('/admin/page', ['uses' => 'AdminController@pageCreate', 'as' => 'page.create']);
     Route::post('/admin/page/{id}', ['uses' => 'AdminController@pageEdit', 'as' => 'page.edit']);
     Route::post('/admin/page/{id}', ['uses' => 'AdminController@pageDelete', 'as' => 'page.delete']);
 
-    Route::get('/admin/page/', ['uses' => 'AdminController@pageTexts', 'as' => 'page.texts']);
+    Route::post('/admin/vacancy', ['uses' => 'AdminController@vacancyCreate', 'as' => 'vacancy.create']);
+    Route::post('/admin/vacancy/{id}', ['uses' => 'AdminController@pvacancyEdit', 'as' => 'vacancy.edit']);
+    Route::post('/admin/vacancy/{id}', ['uses' => 'AdminController@vacancyDelete', 'as' => 'vacancy.delete']);
 
+    Route::get('/admin/page/', ['uses' => 'AdminController@pageTexts', 'as' => 'page.texts']);
     Route::get('/admin/text/', ['uses' => 'AdminController@createText', 'as' => 'text.create']);
     Route::get('/admin/text/get', ['uses' => 'AdminController@getText', 'as' => 'text.get']);
     Route::get('/admin/text/change', ['uses' => 'AdminController@changeText', 'as' => 'text.change']);

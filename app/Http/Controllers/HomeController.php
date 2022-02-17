@@ -12,6 +12,7 @@ use App\Models\Entities\Quiz;
 use App\Models\Entities\Core\User;
 use App\Models\Entities\Setting;
 use App\Models\Text;
+use App\Models\Vacancy;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Auth;
@@ -54,8 +55,14 @@ class HomeController extends BaseController
     public function vacancies()
     {
         $texts = Text::where('page_id', 4)->get();
+        $vacancies = Vacancy::where('active', true)->get();
         $data = HomeController::modelToArray($texts);
-        return View::make('vacancies', compact('data'));
+        return View::make('vacancies', compact('data', 'vacancies'));
+    }
+
+    public function sendCV(Request $request)
+    {
+        return redirect()->back();
     }
 
     public function modelToArray($objects){
